@@ -19,12 +19,14 @@ Small Cocoa-isms are applied as necessary, however. For example, the Ruby code:
 
 ```
 "".empty?
+"foo".end_with? "o"
 ```
 
 would be written as the following in Objective-C:
 
 ```
 [@"" isEmpty];
+[@"foo" endsWith:@"o"];
 ```
 
 A few methods are also borrowed from `ActiveSupport`, such as [`blank?` and `present?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present).
