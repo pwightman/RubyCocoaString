@@ -10,6 +10,11 @@
 
 @implementation NSString (RubyCocoaString)
 
+- (BOOL) beginsWith:(NSString *)beginString {
+	if (self.length < beginString.length) return NO;
+	return [[self substringWithRange:NSMakeRange(0, beginString.length)] isEqualToString:beginString];
+}
+
 - (NSString *)capitalize {
 	return [self capitalizedString];
 }

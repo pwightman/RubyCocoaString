@@ -14,6 +14,7 @@
 
 @interface NSString (RubyCocoaString)
 
+- (BOOL)beginsWith:(NSString *)beginString;
 - (NSString *)capitalize;
 - (NSString *)concat:(NSString *)aString;
 - (NSString *)downcase;
@@ -29,7 +30,6 @@
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
 - (BOOL)endsWith:(NSString *)endString;
-- (BOOL)beginsWith:(NSString *)beginString;
 // TODO: create a varg_list version
 - (NSString *)delete:(NSString *)delString;
 - (void)eachChar:(void (^)(NSString *ch))block;

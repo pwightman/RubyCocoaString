@@ -7,7 +7,16 @@
 //
 
 #import "RCBeginsWithTests.h"
+#import "NSString+RubyCocoaString.h"
 
 @implementation RCBeginsWithTests
+
+- (void) testBeginsWithValidCase {
+	STAssertTrue([@"foobar" beginsWith:@"foo"], @"beginsWith: foobar should begin with foo");
+}
+
+- (void) testBeginsWithStringOnEmptyString {
+	STAssertFalse([@"" beginsWith:@"foo"], @"beginsWith: empty string should not begin with foo");
+}
 
 @end
