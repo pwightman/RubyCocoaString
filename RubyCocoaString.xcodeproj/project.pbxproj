@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F3B37AA1684CF640009ACA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37A91684CF640009ACA8 /* UIKit.framework */; };
+		5F3B37AC1684CF640009ACA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37AB1684CF640009ACA8 /* Foundation.framework */; };
+		5F3B37AE1684CF640009ACA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37AD1684CF640009ACA8 /* CoreGraphics.framework */; };
+		5F3B37B01684CF640009ACA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37AF1684CF640009ACA8 /* CoreData.framework */; };
+		5F3B37B61684CF640009ACA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B37B41684CF640009ACA8 /* InfoPlist.strings */; };
+		5F3B37B81684CF640009ACA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B37B71684CF640009ACA8 /* main.m */; };
+		5F3B37BC1684CF640009ACA8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B37BB1684CF640009ACA8 /* RCAppDelegate.m */; };
+		5F3B37BE1684CF640009ACA8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B37BD1684CF640009ACA8 /* Default.png */; };
+		5F3B37C01684CF640009ACA8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B37BF1684CF640009ACA8 /* Default@2x.png */; };
+		5F3B37C21684CF640009ACA8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B37C11684CF640009ACA8 /* Default-568h@2x.png */; };
+		5F3B37C51684CF640009ACA8 /* RubyCocoaString.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F3B37C31684CF640009ACA8 /* RubyCocoaString.xcdatamodeld */; };
+		5F3B37CD1684CF640009ACA8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37CC1684CF640009ACA8 /* SenTestingKit.framework */; };
+		5F3B37CE1684CF640009ACA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37A91684CF640009ACA8 /* UIKit.framework */; };
+		5F3B37CF1684CF640009ACA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37AB1684CF640009ACA8 /* Foundation.framework */; };
+		5F3B37D01684CF640009ACA8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3B37AF1684CF640009ACA8 /* CoreData.framework */; };
+		5F3B37D81684CF640009ACA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F3B37D61684CF640009ACA8 /* InfoPlist.strings */; };
+		5F9D2115168765DB0013422C /* RCSplitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D2114168765DB0013422C /* RCSplitTests.m */; };
+		5F9D21191687A9EE0013422C /* NSString+RubyCocoaString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21181687A9EE0013422C /* NSString+RubyCocoaString.m */; };
+		5F9D21301688B4A60013422C /* RCIsEmptyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D212F1688B4A60013422C /* RCIsEmptyTests.m */; };
+		5F9D21341688B4B40013422C /* RCIsBlankTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21331688B4B40013422C /* RCIsBlankTests.m */; };
+		5F9D21371688B71E0013422C /* RCIsPresentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21361688B71E0013422C /* RCIsPresentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F3B37D11684CF640009ACA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F3B379C1684CF640009ACA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3B37A41684CF640009ACA8;
+			remoteInfo = RubyCocoaString;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F3B37A51684CF640009ACA8 /* RubyCocoaString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyCocoaString.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3B37A91684CF640009ACA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F3B37AB1684CF640009ACA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F3B37AD1684CF640009ACA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F3B37AF1684CF640009ACA8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5F3B37B31684CF640009ACA8 /* RubyCocoaString-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RubyCocoaString-Info.plist"; sourceTree = "<group>"; };
+		5F3B37B51684CF640009ACA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F3B37B71684CF640009ACA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F3B37B91684CF640009ACA8 /* RubyCocoaString-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubyCocoaString-Prefix.pch"; sourceTree = "<group>"; };
+		5F3B37BA1684CF640009ACA8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
+		5F3B37BB1684CF640009ACA8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
+		5F3B37BD1684CF640009ACA8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5F3B37BF1684CF640009ACA8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5F3B37C11684CF640009ACA8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5F3B37C41684CF640009ACA8 /* RubyCocoaString.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubyCocoaString.xcdatamodel; sourceTree = "<group>"; };
+		5F3B37CB1684CF640009ACA8 /* RubyCocoaStringTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubyCocoaStringTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3B37CC1684CF640009ACA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5F3B37D51684CF640009ACA8 /* RubyCocoaStringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RubyCocoaStringTests-Info.plist"; sourceTree = "<group>"; };
+		5F3B37D71684CF640009ACA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F9D2113168765DB0013422C /* RCSplitTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSplitTests.h; sourceTree = "<group>"; };
+		5F9D2114168765DB0013422C /* RCSplitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSplitTests.m; sourceTree = "<group>"; };
+		5F9D21171687A9EE0013422C /* NSString+RubyCocoaString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RubyCocoaString.h"; sourceTree = "<group>"; };
+		5F9D21181687A9EE0013422C /* NSString+RubyCocoaString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RubyCocoaString.m"; sourceTree = "<group>"; };
+		5F9D212E1688B4A60013422C /* RCIsEmptyTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIsEmptyTests.h; sourceTree = "<group>"; };
+		5F9D212F1688B4A60013422C /* RCIsEmptyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIsEmptyTests.m; sourceTree = "<group>"; };
+		5F9D21321688B4B40013422C /* RCIsBlankTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIsBlankTests.h; sourceTree = "<group>"; };
+		5F9D21331688B4B40013422C /* RCIsBlankTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIsBlankTests.m; sourceTree = "<group>"; };
+		5F9D21351688B71D0013422C /* RCIsPresentTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCIsPresentTests.h; sourceTree = "<group>"; };
+		5F9D21361688B71E0013422C /* RCIsPresentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCIsPresentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F3B37A21684CF640009ACA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3B37AA1684CF640009ACA8 /* UIKit.framework in Frameworks */,
+				5F3B37AC1684CF640009ACA8 /* Foundation.framework in Frameworks */,
+				5F3B37AE1684CF640009ACA8 /* CoreGraphics.framework in Frameworks */,
+				5F3B37B01684CF640009ACA8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3B37C71684CF640009ACA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3B37CD1684CF640009ACA8 /* SenTestingKit.framework in Frameworks */,
+				5F3B37CE1684CF640009ACA8 /* UIKit.framework in Frameworks */,
+				5F3B37CF1684CF640009ACA8 /* Foundation.framework in Frameworks */,
+				5F3B37D01684CF640009ACA8 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F3B379A1684CF640009ACA8 = {
+			isa = PBXGroup;
+			children = (
+				5F3B37B11684CF640009ACA8 /* RubyCocoaString */,
+				5F3B37D31684CF640009ACA8 /* RubyCocoaStringTests */,
+				5F3B37A81684CF640009ACA8 /* Frameworks */,
+				5F3B37A61684CF640009ACA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F3B37A61684CF640009ACA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B37A51684CF640009ACA8 /* RubyCocoaString.app */,
+				5F3B37CB1684CF640009ACA8 /* RubyCocoaStringTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F3B37A81684CF640009ACA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B37A91684CF640009ACA8 /* UIKit.framework */,
+				5F3B37AB1684CF640009ACA8 /* Foundation.framework */,
+				5F3B37AD1684CF640009ACA8 /* CoreGraphics.framework */,
+				5F3B37AF1684CF640009ACA8 /* CoreData.framework */,
+				5F3B37CC1684CF640009ACA8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F3B37B11684CF640009ACA8 /* RubyCocoaString */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B37BA1684CF640009ACA8 /* RCAppDelegate.h */,
+				5F3B37BB1684CF640009ACA8 /* RCAppDelegate.m */,
+				5F3B37C31684CF640009ACA8 /* RubyCocoaString.xcdatamodeld */,
+				5F3B37B21684CF640009ACA8 /* Supporting Files */,
+				5F9D21171687A9EE0013422C /* NSString+RubyCocoaString.h */,
+				5F9D21181687A9EE0013422C /* NSString+RubyCocoaString.m */,
+			);
+			path = RubyCocoaString;
+			sourceTree = "<group>";
+		};
+		5F3B37B21684CF640009ACA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B37B31684CF640009ACA8 /* RubyCocoaString-Info.plist */,
+				5F3B37B41684CF640009ACA8 /* InfoPlist.strings */,
+				5F3B37B71684CF640009ACA8 /* main.m */,
+				5F3B37B91684CF640009ACA8 /* RubyCocoaString-Prefix.pch */,
+				5F3B37BD1684CF640009ACA8 /* Default.png */,
+				5F3B37BF1684CF640009ACA8 /* Default@2x.png */,
+				5F3B37C11684CF640009ACA8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F3B37D31684CF640009ACA8 /* RubyCocoaStringTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F9D21321688B4B40013422C /* RCIsBlankTests.h */,
+				5F9D21331688B4B40013422C /* RCIsBlankTests.m */,
+				5F9D212E1688B4A60013422C /* RCIsEmptyTests.h */,
+				5F9D212F1688B4A60013422C /* RCIsEmptyTests.m */,
+				5F9D21351688B71D0013422C /* RCIsPresentTests.h */,
+				5F9D21361688B71E0013422C /* RCIsPresentTests.m */,
+				5F9D2113168765DB0013422C /* RCSplitTests.h */,
+				5F9D2114168765DB0013422C /* RCSplitTests.m */,
+				5F3B37D41684CF640009ACA8 /* Supporting Files */,
+			);
+			path = RubyCocoaStringTests;
+			sourceTree = "<group>";
+		};
+		5F3B37D41684CF640009ACA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F3B37D51684CF640009ACA8 /* RubyCocoaStringTests-Info.plist */,
+				5F3B37D61684CF640009ACA8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F3B37A41684CF640009ACA8 /* RubyCocoaString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3B37DE1684CF640009ACA8 /* Build configuration list for PBXNativeTarget "RubyCocoaString" */;
+			buildPhases = (
+				5F3B37A11684CF640009ACA8 /* Sources */,
+				5F3B37A21684CF640009ACA8 /* Frameworks */,
+				5F3B37A31684CF640009ACA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RubyCocoaString;
+			productName = RubyCocoaString;
+			productReference = 5F3B37A51684CF640009ACA8 /* RubyCocoaString.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F3B37CA1684CF640009ACA8 /* RubyCocoaStringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3B37E11684CF640009ACA8 /* Build configuration list for PBXNativeTarget "RubyCocoaStringTests" */;
+			buildPhases = (
+				5F3B37C61684CF640009ACA8 /* Sources */,
+				5F3B37C71684CF640009ACA8 /* Frameworks */,
+				5F3B37C81684CF640009ACA8 /* Resources */,
+				5F3B37C91684CF640009ACA8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F3B37D21684CF640009ACA8 /* PBXTargetDependency */,
+			);
+			name = RubyCocoaStringTests;
+			productName = RubyCocoaStringTests;
+			productReference = 5F3B37CB1684CF640009ACA8 /* RubyCocoaStringTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F3B379C1684CF640009ACA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RC;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Parker Wightman Inc.";
+			};
+			buildConfigurationList = 5F3B379F1684CF640009ACA8 /* Build configuration list for PBXProject "RubyCocoaString" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F3B379A1684CF640009ACA8;
+			productRefGroup = 5F3B37A61684CF640009ACA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F3B37A41684CF640009ACA8 /* RubyCocoaString */,
+				5F3B37CA1684CF640009ACA8 /* RubyCocoaStringTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F3B37A31684CF640009ACA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3B37B61684CF640009ACA8 /* InfoPlist.strings in Resources */,
+				5F3B37BE1684CF640009ACA8 /* Default.png in Resources */,
+				5F3B37C01684CF640009ACA8 /* Default@2x.png in Resources */,
+				5F3B37C21684CF640009ACA8 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3B37C81684CF640009ACA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3B37D81684CF640009ACA8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F3B37C91684CF640009ACA8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F3B37A11684CF640009ACA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3B37B81684CF640009ACA8 /* main.m in Sources */,
+				5F3B37BC1684CF640009ACA8 /* RCAppDelegate.m in Sources */,
+				5F3B37C51684CF640009ACA8 /* RubyCocoaString.xcdatamodeld in Sources */,
+				5F9D21191687A9EE0013422C /* NSString+RubyCocoaString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3B37C61684CF640009ACA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9D2115168765DB0013422C /* RCSplitTests.m in Sources */,
+				5F9D21301688B4A60013422C /* RCIsEmptyTests.m in Sources */,
+				5F9D21341688B4B40013422C /* RCIsBlankTests.m in Sources */,
+				5F9D21371688B71E0013422C /* RCIsPresentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F3B37D21684CF640009ACA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F3B37A41684CF640009ACA8 /* RubyCocoaString */;
+			targetProxy = 5F3B37D11684CF640009ACA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F3B37B41684CF640009ACA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F3B37B51684CF640009ACA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F3B37D61684CF640009ACA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F3B37D71684CF640009ACA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F3B37DC1684CF640009ACA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F3B37DD1684CF640009ACA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F3B37DF1684CF640009ACA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RubyCocoaString/RubyCocoaString-Prefix.pch";
+				INFOPLIST_FILE = "RubyCocoaString/RubyCocoaString-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F3B37E01684CF640009ACA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RubyCocoaString/RubyCocoaString-Prefix.pch";
+				INFOPLIST_FILE = "RubyCocoaString/RubyCocoaString-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F3B37E21684CF640009ACA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RubyCocoaString.app/RubyCocoaString";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RubyCocoaString/RubyCocoaString-Prefix.pch";
+				INFOPLIST_FILE = "RubyCocoaStringTests/RubyCocoaStringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5F3B37E31684CF640009ACA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RubyCocoaString.app/RubyCocoaString";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RubyCocoaString/RubyCocoaString-Prefix.pch";
+				INFOPLIST_FILE = "RubyCocoaStringTests/RubyCocoaStringTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F3B379F1684CF640009ACA8 /* Build configuration list for PBXProject "RubyCocoaString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3B37DC1684CF640009ACA8 /* Debug */,
+				5F3B37DD1684CF640009ACA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3B37DE1684CF640009ACA8 /* Build configuration list for PBXNativeTarget "RubyCocoaString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3B37DF1684CF640009ACA8 /* Debug */,
+				5F3B37E01684CF640009ACA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F3B37E11684CF640009ACA8 /* Build configuration list for PBXNativeTarget "RubyCocoaStringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3B37E21684CF640009ACA8 /* Debug */,
+				5F3B37E31684CF640009ACA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F3B37C31684CF640009ACA8 /* RubyCocoaString.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F3B37C41684CF640009ACA8 /* RubyCocoaString.xcdatamodel */,
+			);
+			currentVersion = 5F3B37C41684CF640009ACA8 /* RubyCocoaString.xcdatamodel */;
+			path = RubyCocoaString.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F3B379C1684CF640009ACA8 /* Project object */;
+}
