@@ -27,6 +27,12 @@
 	return [self lowercaseString];
 }
 
+- (void) eachChar:(void (^)(NSString *))block {
+	for (NSInteger i = 0; i < self.length; i++) {
+		block([self substringWithRange:NSMakeRange(i, 1)]);
+	}
+}
+
 - (BOOL) endsWith:(NSString *)endString {
 	if (self.length < endString.length) return NO;
 	return [[self substringWithRange:NSMakeRange(self.length - endString.length, endString.length)] isEqualToString:endString];

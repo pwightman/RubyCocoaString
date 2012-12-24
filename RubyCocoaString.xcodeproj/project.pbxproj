@@ -197,6 +197,8 @@
 				5F9D214E1688DFA70013422C /* RCConcatTests.m */,
 				5F9D213B1688DF220013422C /* RCDowncaseTests.h */,
 				5F9D213C1688DF220013422C /* RCDowncaseTests.m */,
+				5F9D21471688DF7E0013422C /* RCEachCharTests.h */,
+				5F9D21481688DF7E0013422C /* RCEachCharTests.m */,
 				5F9D21411688DF4C0013422C /* RCEndsWithTests.h */,
 				5F9D21421688DF4C0013422C /* RCEndsWithTests.m */,
 				5F9D21321688B4B40013422C /* RCIsBlankTests.h */,
@@ -215,8 +217,6 @@
 				5F9D213F1688DF3A0013422C /* RCDeleteTests.m */,
 				5F9D21441688DF590013422C /* RCGsubTests.h */,
 				5F9D21451688DF590013422C /* RCGsubTests.m */,
-				5F9D21471688DF7E0013422C /* RCEachCharTests.h */,
-				5F9D21481688DF7E0013422C /* RCEachCharTests.m */,
 				5F3B37D41684CF640009ACA8 /* Supporting Files */,
 			);
 			path = RubyCocoaStringTests;
