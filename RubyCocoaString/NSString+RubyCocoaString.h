@@ -14,6 +14,7 @@
 
 @interface NSString (RubyCocoaString)
 - (NSString *)concat:(NSString *)aString;
+- (NSString *)downcase;
 // True if it is literally the empty string (@"")
 - (BOOL) isEmpty;
 // True if it is just whitespace characters (@"  \t\n")
@@ -22,10 +23,9 @@
 - (BOOL) isPresent;
 - (NSArray *) split:(NSString *)splitString;
 - (NSString *)strip;
+- (NSString *)upcase;
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
-- (NSString *)upcase;
-- (NSString *)downcase;
 - (NSString *)capitalize;
 - (BOOL)endsWith:(NSString *)endString;
 - (BOOL)beginsWith:(NSString *)beginString;

@@ -14,6 +14,10 @@
 	return [self stringByAppendingString:aString];
 }
 
+- (NSString *)downcase {
+	return [self lowercaseString];
+}
+
 - (BOOL) isEmpty {
 	return self.length == 0;
 }
@@ -43,6 +47,10 @@
 
 - (NSString *)strip {
 	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+- (NSString *)upcase {
+	return [self uppercaseString];
 }
 
 @end

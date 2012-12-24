@@ -7,7 +7,12 @@
 //
 
 #import "RCUpcaseTests.h"
+#import "NSString+RubyCocoaString.h"
 
 @implementation RCUpcaseTests
+
+- (void) testUpcaseWithLowerCaseString {
+	STAssertTrue([[@"foo" upcase] isEqualToString:@"FOO"], @"upcase: foo should be FOO");
+}
 
 @end
