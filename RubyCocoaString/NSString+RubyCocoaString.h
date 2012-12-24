@@ -13,19 +13,19 @@
 							error:nil]
 
 @interface NSString (RubyCocoaString)
-- (NSArray *) split:(NSString *)splitString;
-// If it is literally the empty string (@"")
+- (NSString *)concat:(NSString *)aString;
+// True if it is literally the empty string (@"")
 - (BOOL) isEmpty;
-// If it is just whitespace characters (@"  \t\n")
+// True if it is just whitespace characters (@"  \t\n")
 - (BOOL) isBlank;
 // Opposite of isBlank
 - (BOOL) isPresent;
+- (NSArray *) split:(NSString *)splitString;
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
 - (NSString *)upcase;
 - (NSString *)downcase;
 - (NSString *)capitalize;
-- (NSString *)concat;
 - (BOOL)endsWith:(NSString *)endString;
 - (BOOL)beginsWith:(NSString *)beginString;
 // TODO: create a varg_list version

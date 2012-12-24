@@ -10,6 +10,22 @@
 
 @implementation NSString (RubyCocoaString)
 
+- (NSString *)concat:(NSString *)aString {
+	return [self stringByAppendingString:aString];
+}
+
+- (BOOL) isEmpty {
+	return self.length == 0;
+}
+
+- (BOOL) isBlank {
+	return [[[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""] isEmpty];
+}
+
+- (BOOL) isPresent {
+	return ![self isBlank];
+}
+
 - (NSArray *) split:(NSString *)splitString {
 	// The empty string should return an array of each character
 	if ([splitString isEmpty]) {
@@ -23,18 +39,6 @@
 	} else {
 		return [self componentsSeparatedByString:splitString];
 	}
-}
-
-- (BOOL) isEmpty {
-	return self.length == 0;
-}
-
-- (BOOL) isBlank {
-	return [[[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""] isEmpty];
-}
-
-- (BOOL) isPresent {
-	return ![self isBlank];
 }
 
 @end
