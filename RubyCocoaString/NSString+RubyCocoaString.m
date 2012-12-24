@@ -33,6 +33,37 @@
 	return [[self substringWithRange:NSMakeRange(self.length - endString.length, endString.length)] isEqualToString:endString];
 }
 
+- (NSString *)gsub:(NSRegularExpression *)regex withString:(NSString *)replacementString {
+	NSMutableString *result = [self mutableCopy];
+	[regex replaceMatchesInString:result options:0 range:NSMakeRange(0, self.length) withTemplate:replacementString];
+	
+	return result;
+}
+
+- (NSString *)gsub:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *))block {
+	NSArray *matches = [regex matchesInString:self options:0 range:NSMakeRange(0, self.length)];
+	
+	NSString *result = [self copy];
+	
+	/*
+	 The string that will be inserted may be of a different length than the string it will
+	 replace, so we need to keep track of the differences in length in the new strings and
+	 the original string inside of dx.
+	*/
+	NSInteger dx = 0;
+	
+	for (NSTextCheckingResult *match in matches) {
+		NSString *originalStr = [self substringWithRange:[match range]];
+		NSString *replaceStr = block(originalStr);
+		NSRange newRange = [match range];
+		newRange.location += dx;
+		result = [result stringByReplacingCharactersInRange:newRange withString:replaceStr];
+		dx += replaceStr.length - originalStr.length;
+	}
+	
+	return result;
+}
+
 - (BOOL)isEmpty {
 	return self.length == 0;
 }

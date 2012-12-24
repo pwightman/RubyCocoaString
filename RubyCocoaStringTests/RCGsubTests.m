@@ -7,7 +7,39 @@
 //
 
 #import "RCGsubTests.h"
+#import "NSString+RubyCocoaString.h"
 
 @implementation RCGsubTests
+
+- (void) testGsubWithStringWithMatchingStrings {
+	NSString *initialStr = @"Foo foo";
+	
+	NSString *result = [initialStr gsub:RC_REGEX(@"(Foo|foo)") withString:@"bar"];
+	
+	STAssertTrue([result isEqualToString:@"bar bar"], @"gsub:withString: should replace \"Foo foo\" with \"bar bar\"");
+}
+
+- (void) testGsubWithBlockWithMatchingStrings {
+	NSString *initialStr = @"Foo foo";
+	
+	__block NSInteger value = 0;
+	
+	NSString *result = [initialStr gsub:RC_REGEX(@"(Foo|foo)") withBlock:^NSString *(NSString *str) {
+		return [@(value++) stringValue];
+	}];
+	
+	STAssertTrue([result isEqualToString:@"0 1"], @"gsub:withString: should replace \"Foo foo\" with \"bar bar\"");
+}
+
+- (void) testGsubWithBlockWithLongReplacementStrings {
+	NSString *initialStr = @"Foo bar";
+	
+	NSString *result = [initialStr gsub:RC_REGEX(@"(Foo|bar)") withBlock:^NSString *(NSString *str) {
+		return @"Some really, really long string";
+	}];
+	
+	STAssertTrue([result isEqualToString:@"Some really, really long string Some really, really long string"], @"gsub:withString: should replace \"Foo foo\" with \"bar bar\"");
+	
+}
 
 @end
