@@ -37,6 +37,7 @@
 		5F9D214C1688DF890013422C /* RCBeginsWithTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D214B1688DF880013422C /* RCBeginsWithTests.m */; };
 		5F9D214F1688DFA70013422C /* RCConcatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D214E1688DFA70013422C /* RCConcatTests.m */; };
 		5F9D21521688E27D0013422C /* RCStripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21511688E27C0013422C /* RCStripTests.m */; };
+		5F9D21551688E5060013422C /* RCCapitalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21541688E5050013422C /* RCCapitalizeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		5F9D214E1688DFA70013422C /* RCConcatTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCConcatTests.m; sourceTree = "<group>"; };
 		5F9D21501688E27C0013422C /* RCStripTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCStripTests.h; sourceTree = "<group>"; };
 		5F9D21511688E27C0013422C /* RCStripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCStripTests.m; sourceTree = "<group>"; };
+		5F9D21531688E5050013422C /* RCCapitalizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCapitalizeTests.h; sourceTree = "<group>"; };
+		5F9D21541688E5050013422C /* RCCapitalizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCapitalizeTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,8 @@
 				5F3B37D41684CF640009ACA8 /* Supporting Files */,
 				5F9D21501688E27C0013422C /* RCStripTests.h */,
 				5F9D21511688E27C0013422C /* RCStripTests.m */,
+				5F9D21531688E5050013422C /* RCCapitalizeTests.h */,
+				5F9D21541688E5050013422C /* RCCapitalizeTests.m */,
 			);
 			path = RubyCocoaStringTests;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				5F9D214C1688DF890013422C /* RCBeginsWithTests.m in Sources */,
 				5F9D214F1688DFA70013422C /* RCConcatTests.m in Sources */,
 				5F9D21521688E27D0013422C /* RCStripTests.m in Sources */,
+				5F9D21551688E5060013422C /* RCCapitalizeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,10 @@
 
 @implementation NSString (RubyCocoaString)
 
+- (NSString *)capitalize {
+	return [self capitalizedString];
+}
+
 - (NSString *)concat:(NSString *)aString {
 	return [self stringByAppendingString:aString];
 }
@@ -18,19 +22,19 @@
 	return [self lowercaseString];
 }
 
-- (BOOL) isEmpty {
+- (BOOL)isEmpty {
 	return self.length == 0;
 }
 
-- (BOOL) isBlank {
+- (BOOL)isBlank {
 	return [[[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""] isEmpty];
 }
 
-- (BOOL) isPresent {
+- (BOOL)isPresent {
 	return ![self isBlank];
 }
 
-- (NSArray *) split:(NSString *)splitString {
+- (NSArray *)split:(NSString *)splitString {
 	// The empty string should return an array of each character
 	if ([splitString isEmpty]) {
 		NSMutableArray *array = [NSMutableArray arrayWithCapacity:self.length];

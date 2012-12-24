@@ -13,6 +13,8 @@
 							error:nil]
 
 @interface NSString (RubyCocoaString)
+
+- (NSString *)capitalize;
 - (NSString *)concat:(NSString *)aString;
 - (NSString *)downcase;
 // True if it is literally the empty string (@"")
@@ -26,7 +28,6 @@
 - (NSString *)upcase;
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
-- (NSString *)capitalize;
 - (BOOL)endsWith:(NSString *)endString;
 - (BOOL)beginsWith:(NSString *)beginString;
 // TODO: create a varg_list version
