@@ -18,6 +18,7 @@
 - (NSString *)capitalize;
 - (NSString *)concat:(NSString *)aString;
 - (NSString *)downcase;
+- (BOOL)endsWith:(NSString *)endString;
 // True if it is literally the empty string (@"")
 - (BOOL) isEmpty;
 // True if it is just whitespace characters (@"  \t\n")
@@ -29,7 +30,6 @@
 - (NSString *)upcase;
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
-- (BOOL)endsWith:(NSString *)endString;
 // TODO: create a varg_list version
 - (NSString *)delete:(NSString *)delString;
 - (void)eachChar:(void (^)(NSString *ch))block;

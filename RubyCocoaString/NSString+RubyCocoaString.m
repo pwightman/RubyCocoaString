@@ -27,6 +27,11 @@
 	return [self lowercaseString];
 }
 
+- (BOOL) endsWith:(NSString *)endString {
+	if (self.length < endString.length) return NO;
+	return [[self substringWithRange:NSMakeRange(self.length - endString.length, endString.length)] isEqualToString:endString];
+}
+
 - (BOOL)isEmpty {
 	return self.length == 0;
 }

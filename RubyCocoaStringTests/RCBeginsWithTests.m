@@ -15,6 +15,10 @@
 	STAssertTrue([@"foobar" beginsWith:@"foo"], @"beginsWith: foobar should begin with foo");
 }
 
+- (void) testEndsWithSameString {
+	STAssertTrue([@"foo" beginsWith:@"foo"], @"beginWith: foo should begin with foo");
+}
+
 - (void) testBeginsWithStringOnEmptyString {
 	STAssertFalse([@"" beginsWith:@"foo"], @"beginsWith: empty string should not begin with foo");
 }

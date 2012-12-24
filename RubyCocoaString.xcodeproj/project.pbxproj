@@ -189,12 +189,16 @@
 		5F3B37D31684CF640009ACA8 /* RubyCocoaStringTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F9D214A1688DF880013422C /* RCBeginsWithTests.h */,
+				5F9D214B1688DF880013422C /* RCBeginsWithTests.m */,
 				5F9D21531688E5050013422C /* RCCapitalizeTests.h */,
 				5F9D21541688E5050013422C /* RCCapitalizeTests.m */,
 				5F9D214D1688DFA70013422C /* RCConcatTests.h */,
 				5F9D214E1688DFA70013422C /* RCConcatTests.m */,
 				5F9D213B1688DF220013422C /* RCDowncaseTests.h */,
 				5F9D213C1688DF220013422C /* RCDowncaseTests.m */,
+				5F9D21411688DF4C0013422C /* RCEndsWithTests.h */,
+				5F9D21421688DF4C0013422C /* RCEndsWithTests.m */,
 				5F9D21321688B4B40013422C /* RCIsBlankTests.h */,
 				5F9D21331688B4B40013422C /* RCIsBlankTests.m */,
 				5F9D212E1688B4A60013422C /* RCIsEmptyTests.h */,
@@ -209,14 +213,10 @@
 				5F9D21391688DF170013422C /* RCUpcaseTests.m */,
 				5F9D213E1688DF3A0013422C /* RCDeleteTests.h */,
 				5F9D213F1688DF3A0013422C /* RCDeleteTests.m */,
-				5F9D21411688DF4C0013422C /* RCEndsWithTests.h */,
-				5F9D21421688DF4C0013422C /* RCEndsWithTests.m */,
 				5F9D21441688DF590013422C /* RCGsubTests.h */,
 				5F9D21451688DF590013422C /* RCGsubTests.m */,
 				5F9D21471688DF7E0013422C /* RCEachCharTests.h */,
 				5F9D21481688DF7E0013422C /* RCEachCharTests.m */,
-				5F9D214A1688DF880013422C /* RCBeginsWithTests.h */,
-				5F9D214B1688DF880013422C /* RCBeginsWithTests.m */,
 				5F3B37D41684CF640009ACA8 /* Supporting Files */,
 			);
 			path = RubyCocoaStringTests;
