@@ -21,6 +21,7 @@
 // Opposite of isBlank
 - (BOOL) isPresent;
 - (NSArray *) split:(NSString *)splitString;
+- (NSString *)strip;
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
 - (NSString *)upcase;

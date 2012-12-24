@@ -36,6 +36,7 @@
 		5F9D21491688DF7E0013422C /* RCEachCharTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21481688DF7E0013422C /* RCEachCharTests.m */; };
 		5F9D214C1688DF890013422C /* RCBeginsWithTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D214B1688DF880013422C /* RCBeginsWithTests.m */; };
 		5F9D214F1688DFA70013422C /* RCConcatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D214E1688DFA70013422C /* RCConcatTests.m */; };
+		5F9D21521688E27D0013422C /* RCStripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21511688E27C0013422C /* RCStripTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		5F9D214B1688DF880013422C /* RCBeginsWithTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCBeginsWithTests.m; sourceTree = "<group>"; };
 		5F9D214D1688DFA70013422C /* RCConcatTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCConcatTests.h; sourceTree = "<group>"; };
 		5F9D214E1688DFA70013422C /* RCConcatTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCConcatTests.m; sourceTree = "<group>"; };
+		5F9D21501688E27C0013422C /* RCStripTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCStripTests.h; sourceTree = "<group>"; };
+		5F9D21511688E27C0013422C /* RCStripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCStripTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +211,8 @@
 				5F9D214A1688DF880013422C /* RCBeginsWithTests.h */,
 				5F9D214B1688DF880013422C /* RCBeginsWithTests.m */,
 				5F3B37D41684CF640009ACA8 /* Supporting Files */,
+				5F9D21501688E27C0013422C /* RCStripTests.h */,
+				5F9D21511688E27C0013422C /* RCStripTests.m */,
 			);
 			path = RubyCocoaStringTests;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				5F9D21491688DF7E0013422C /* RCEachCharTests.m in Sources */,
 				5F9D214C1688DF890013422C /* RCBeginsWithTests.m in Sources */,
 				5F9D214F1688DFA70013422C /* RCConcatTests.m in Sources */,
+				5F9D21521688E27D0013422C /* RCStripTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

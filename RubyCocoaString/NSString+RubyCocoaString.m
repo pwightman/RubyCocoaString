@@ -41,4 +41,8 @@
 	}
 }
 
+- (NSString *)strip {
+	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
 @end
