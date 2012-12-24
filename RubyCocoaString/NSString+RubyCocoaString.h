@@ -14,7 +14,6 @@
 
 @interface NSString (RubyCocoaString)
 
-- (BOOL)beginsWith:(NSString *)beginString;
 - (NSString *)capitalize;
 - (NSString *)concat:(NSString *)aString;
 - (NSString *)downcase;
@@ -26,6 +25,7 @@
 // Opposite of isBlank
 - (BOOL) isPresent;
 - (NSArray *) split:(NSString *)splitString;
+- (BOOL)startsWith:(NSString *)startString;
 - (NSString *)strip;
 - (NSString *)upcase;
 

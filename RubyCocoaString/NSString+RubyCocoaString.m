@@ -10,11 +10,6 @@
 
 @implementation NSString (RubyCocoaString)
 
-- (BOOL) beginsWith:(NSString *)beginString {
-	if (self.length < beginString.length) return NO;
-	return [[self substringWithRange:NSMakeRange(0, beginString.length)] isEqualToString:beginString];
-}
-
 - (NSString *)capitalize {
 	return [self capitalizedString];
 }
@@ -64,6 +59,12 @@
 		return [self componentsSeparatedByString:splitString];
 	}
 }
+
+- (BOOL) startsWith:(NSString *)startString {
+	if (self.length < startString.length) return NO;
+	return [[self substringWithRange:NSMakeRange(0, startString.length)] isEqualToString:startString];
+}
+
 
 - (NSString *)strip {
 	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
