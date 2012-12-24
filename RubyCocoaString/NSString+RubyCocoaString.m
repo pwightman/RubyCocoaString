@@ -26,7 +26,7 @@
 }
 
 - (BOOL) isEmpty {
-	return [self isEqualToString:@""];
+	return self.length == 0;
 }
 
 - (BOOL) isBlank {
