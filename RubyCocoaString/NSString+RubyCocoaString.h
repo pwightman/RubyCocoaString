@@ -19,12 +19,13 @@
 - (NSString *)downcase;
 - (BOOL)endsWith:(NSString *)endString;
 // True if it is literally the empty string (@"")
-- (BOOL) isEmpty;
+- (BOOL)isEmpty;
 // True if it is just whitespace characters (@"  \t\n")
-- (BOOL) isBlank;
+- (BOOL)isBlank;
 // Opposite of isBlank
-- (BOOL) isPresent;
-- (NSArray *) split:(NSString *)splitString;
+- (BOOL)isPresent;
+- (NSString *)reverse;
+- (NSArray *)split:(NSString *)splitString;
 - (BOOL)startsWith:(NSString *)startString;
 - (NSString *)strip;
 - (NSString *)upcase;

@@ -28,7 +28,7 @@
 		return [@(value++) stringValue];
 	}];
 	
-	STAssertTrue([result isEqualToString:@"0 1"], @"gsub:withString: should replace \"Foo foo\" with \"bar bar\"");
+	STAssertTrue([result isEqualToString:@"0 1"], @"gsub:withBlock: should replace \"Foo foo\" with \"bar bar\"");
 }
 
 - (void) testGsubWithBlockWithLongReplacementStrings {
@@ -38,8 +38,19 @@
 		return @"Some really, really long string";
 	}];
 	
-	STAssertTrue([result isEqualToString:@"Some really, really long string Some really, really long string"], @"gsub:withString: should replace \"Foo foo\" with \"bar bar\"");
+	STAssertTrue([result isEqualToString:@"Some really, really long string Some really, really long string"], @"gsub:withBlock: should replace \"Foo foo\" with really long string");
 	
 }
+
+//- (void) testGsubWithBlockWithSimpleKleeneStarExpression {
+//	NSString *initialStr = @"hello";
+//	
+//	NSString *result = [initialStr gsub:RC_REGEX(@".*") withBlock:^NSString *(NSString *str) {
+//		return @"world";
+//	}];
+//	
+//	STAssertTrue([result isEqualToString:@"world"], @"gsub:withBlock: should replace \"Foo foo\" with \"bar bar\"");
+//	
+//}
 
 @end

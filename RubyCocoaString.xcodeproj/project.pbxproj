@@ -38,6 +38,7 @@
 		5F9D214F1688DFA70013422C /* RCConcatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D214E1688DFA70013422C /* RCConcatTests.m */; };
 		5F9D21521688E27D0013422C /* RCStripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21511688E27C0013422C /* RCStripTests.m */; };
 		5F9D21551688E5060013422C /* RCCapitalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21541688E5050013422C /* RCCapitalizeTests.m */; };
+		5F9D21581689257B0013422C /* RCReverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D21571689257B0013422C /* RCReverseTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		5F9D21511688E27C0013422C /* RCStripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCStripTests.m; sourceTree = "<group>"; };
 		5F9D21531688E5050013422C /* RCCapitalizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCapitalizeTests.h; sourceTree = "<group>"; };
 		5F9D21541688E5050013422C /* RCCapitalizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCapitalizeTests.m; sourceTree = "<group>"; };
+		5F9D21561689257B0013422C /* RCReverseTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCReverseTests.h; sourceTree = "<group>"; };
+		5F9D21571689257B0013422C /* RCReverseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReverseTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,12 +202,16 @@
 				5F9D21481688DF7E0013422C /* RCEachCharTests.m */,
 				5F9D21411688DF4C0013422C /* RCEndsWithTests.h */,
 				5F9D21421688DF4C0013422C /* RCEndsWithTests.m */,
+				5F9D21441688DF590013422C /* RCGsubTests.h */,
+				5F9D21451688DF590013422C /* RCGsubTests.m */,
 				5F9D21321688B4B40013422C /* RCIsBlankTests.h */,
 				5F9D21331688B4B40013422C /* RCIsBlankTests.m */,
 				5F9D212E1688B4A60013422C /* RCIsEmptyTests.h */,
 				5F9D212F1688B4A60013422C /* RCIsEmptyTests.m */,
 				5F9D21351688B71D0013422C /* RCIsPresentTests.h */,
 				5F9D21361688B71E0013422C /* RCIsPresentTests.m */,
+				5F9D21561689257B0013422C /* RCReverseTests.h */,
+				5F9D21571689257B0013422C /* RCReverseTests.m */,
 				5F9D2113168765DB0013422C /* RCSplitTests.h */,
 				5F9D2114168765DB0013422C /* RCSplitTests.m */,
 				5F9D214A1688DF880013422C /* RCStartsWithTests.h */,
@@ -215,8 +222,6 @@
 				5F9D21391688DF170013422C /* RCUpcaseTests.m */,
 				5F9D213E1688DF3A0013422C /* RCDeleteTests.h */,
 				5F9D213F1688DF3A0013422C /* RCDeleteTests.m */,
-				5F9D21441688DF590013422C /* RCGsubTests.h */,
-				5F9D21451688DF590013422C /* RCGsubTests.m */,
 				5F3B37D41684CF640009ACA8 /* Supporting Files */,
 			);
 			path = RubyCocoaStringTests;
@@ -366,6 +371,7 @@
 				5F9D214F1688DFA70013422C /* RCConcatTests.m in Sources */,
 				5F9D21521688E27D0013422C /* RCStripTests.m in Sources */,
 				5F9D21551688E5060013422C /* RCCapitalizeTests.m in Sources */,
+				5F9D21581689257B0013422C /* RCReverseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

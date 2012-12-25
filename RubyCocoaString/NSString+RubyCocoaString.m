@@ -76,6 +76,16 @@
 	return ![self isBlank];
 }
 
+- (NSString *) reverse {
+	NSString *newString = @"";
+	
+	for (NSInteger i = 0; i < self.length; i++) {
+		newString = [newString stringByAppendingString:[self substringWithRange:NSMakeRange(self.length - i - 1, 1)]];
+	}
+	
+	return newString;
+}
+
 - (NSArray *)split:(NSString *)splitString {
 	// The empty string should return an array of each character
 	if ([splitString isEmpty]) {
