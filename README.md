@@ -43,6 +43,7 @@ The following Ruby string methods are currently implemented:
 * [`empty?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-empty-3F)
 * [`gsub`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-gsub)
 * [`present?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
+* [`reverse`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-reverse)
 * [`split`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-split)
 * [`start_with?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-start_with-3F)
 * [`strip`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-strip)
