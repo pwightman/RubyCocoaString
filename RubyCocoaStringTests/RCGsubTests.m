@@ -50,7 +50,6 @@
 //	}];
 //	
 //	STAssertTrue([result isEqualToString:@"world"], @"gsub:withBlock: should replace \"Foo foo\" with \"bar bar\"");
-//	
 //}
 
 @end

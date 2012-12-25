@@ -13,7 +13,7 @@ Ruby string manipulation methods for NSString, implemented as a category.
 `NSString` manipulation is very verbose and lacking in features when 
 compared to modern scripting languages such as Ruby and Python. 
 RubyCocoaString brings the [string manipulation methods from Ruby](http://www.ruby-doc.org/core-1.9.3/String.html) 
-to NSString as a category. All semantics of the Ruby implementation of these methdods is preserved wherever possible, contributions and issues welcome when inconsistencies are found.
+to NSString as a category. All semantics of the Ruby implementation of these methdods are preserved wherever possible, contributions and issues welcome when inconsistencies are found.
 
 Small Cocoa-isms are applied as necessary, however. For example, the Ruby code:
 

@@ -34,10 +34,7 @@
 }
 
 - (NSString *)gsub:(NSRegularExpression *)regex withString:(NSString *)replacementString {
-	NSMutableString *result = [self mutableCopy];
-	[regex replaceMatchesInString:result options:0 range:NSMakeRange(0, self.length) withTemplate:replacementString];
-	
-	return result;
+	return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:replacementString];
 }
 
 - (NSString *)gsub:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *))block {

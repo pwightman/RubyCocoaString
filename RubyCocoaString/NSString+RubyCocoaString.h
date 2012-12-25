@@ -17,7 +17,11 @@
 - (NSString *)capitalize;
 - (NSString *)concat:(NSString *)aString;
 - (NSString *)downcase;
+- (void)eachChar:(void (^)(NSString *ch))block;
 - (BOOL)endsWith:(NSString *)endString;
+- (NSString *)gsub:(NSRegularExpression *)regex withString:(NSString *)replacementString;
+// NOTE: This does not currently meet all semantic use cases of the Ruby implementation.
+- (NSString *)gsub:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *str))block;
 // True if it is literally the empty string (@"")
 - (BOOL)isEmpty;
 // True if it is just whitespace characters (@"  \t\n")
@@ -33,8 +37,5 @@
 // Unimplemented. Do not attempt to implement without first writing test cases!
 // TODO: create a varg_list version
 - (NSString *)delete:(NSString *)delString;
-- (void)eachChar:(void (^)(NSString *ch))block;
-- (NSString *)gsub:(NSRegularExpression *)regex withString:(NSString *)replacementString;
-- (NSString *)gsub:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *str))block;
 
 @end
