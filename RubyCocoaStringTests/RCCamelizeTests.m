@@ -27,4 +27,8 @@
 	STAssertTrue([[@"foo_" camelize] isEqualToString:@"Foo"], @"camelize: foo_ should become Foo");
 }
 
+- (void) testCamelizeOnEmptyString {
+	STAssertTrue([[@"" camelize] isEqualToString:@""], @"camelize: empty string doesn't throw error");
+}
+
 @end

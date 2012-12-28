@@ -52,6 +52,7 @@ The following Ruby string methods are currently implemented:
 * [`blank?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
 * [`camelize`](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-camelize)
 * [`present?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
+* [`underscore`](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-underscore)
 
 ## Contributing
 

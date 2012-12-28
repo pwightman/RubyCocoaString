@@ -52,12 +52,12 @@
 	return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:replacementString];
 }
 
-- (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *))block {
+- (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *, NSRange))block {
 	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr options:0 error:nil];
 	return [self gsubRegex:regex withBlock:block];
 }
 
-- (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *))block {
+- (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *, NSRange))block {
 	NSArray *matches = [regex matchesInString:self options:0 range:NSMakeRange(0, self.length)];
 	
 	NSString *result = [self copy];
@@ -71,7 +71,7 @@
 	
 	for (NSTextCheckingResult *match in matches) {
 		NSString *originalStr = [self substringWithRange:[match range]];
-		NSString *replaceStr = block(originalStr);
+		NSString *replaceStr = block(originalStr, [match range]);
 		NSRange newRange = [match range];
 		newRange.location += dx;
 		result = [result stringByReplacingCharactersInRange:newRange withString:replaceStr];
@@ -126,6 +126,19 @@
 
 - (NSString *)strip {
 	return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+- (NSString *)underscore {
+	NSString *str = [self gsub:@"-" withString:@"_"];
+	
+	str = [str gsub:@"[A-Z]+" withBlock:^NSString *(NSString *str, NSRange range) {
+		// We want this to apply to everything except if the capital letter is the first
+		// letter in the string.
+		if (range.location == 0) return str;
+		return [NSString stringWithFormat:@"_%@", [str downcase]];
+	}];
+	
+	return [str downcase];
 }
 
 - (NSString *)upcase {

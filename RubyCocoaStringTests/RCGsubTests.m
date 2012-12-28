@@ -24,7 +24,7 @@
 	
 	__block NSInteger value = 0;
 	
-	NSString *result = [initialStr gsub:@"(Foo|foo)" withBlock:^NSString *(NSString *str) {
+	NSString *result = [initialStr gsub:@"(Foo|foo)" withBlock:^NSString *(NSString *str, NSRange range) {
 		return [@(value++) stringValue];
 	}];
 	
@@ -34,12 +34,22 @@
 - (void) testGsubWithBlockWithLongReplacementStrings {
 	NSString *initialStr = @"Foo bar";
 	
-	NSString *result = [initialStr gsub:@"(Foo|bar)" withBlock:^NSString *(NSString *str) {
+	NSString *result = [initialStr gsub:@"(Foo|bar)" withBlock:^NSString *(NSString *str, NSRange range) {
 		return @"Some really, really long string";
 	}];
 	
 	STAssertTrue([result isEqualToString:@"Some really, really long string Some really, really long string"], @"gsub:withBlock: should replace \"Foo foo\" with really long string");
 	
+}
+
+- (void) testGsubWithCapitalLetterRange {
+	NSString *str = @"fooBARandFOO";
+	__block NSInteger count = 0;
+	NSString *result = [str gsub:@"[A-Z]+" withBlock:^NSString *(NSString *str, NSRange range) {
+		return [@(count++) stringValue];
+	}];
+	
+	STAssertTrue([result isEqualToString:@"foo0and1"], @"gsub:withBlock: fooBARandFOO should become foo0and1");
 }
 
 //- (void) testGsubWithBlockWithSimpleKleeneStarExpression {
