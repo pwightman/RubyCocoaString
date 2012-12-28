@@ -10,6 +10,16 @@
 
 @implementation NSString (RubyCocoaString)
 
+- (NSString *)camelize {
+	// Remove leading and trailing underscores
+	NSString *str = [self gsub:@"^_*" withString:@""];
+	str = [str gsub:@"_*$" withString:@""];
+	
+	// Capitalize will also capitalize all letters following underscores. Nice.
+	str = [str capitalize];
+	return [str gsub:@"_" withString:@""];
+}
+
 - (NSString *)capitalize {
 	return [self capitalizedString];
 }
@@ -33,11 +43,21 @@
 	return [[self substringWithRange:NSMakeRange(self.length - endString.length, endString.length)] isEqualToString:endString];
 }
 
-- (NSString *)gsub:(NSRegularExpression *)regex withString:(NSString *)replacementString {
+- (NSString *)gsub:(NSString *)regexStr withString:(NSString *)replacementString {
+	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr options:0 error:nil];
+	return [self gsubRegex:regex withString:replacementString];
+}
+
+- (NSString *)gsubRegex:(NSRegularExpression *)regex withString:(NSString *)replacementString {
 	return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:replacementString];
 }
 
-- (NSString *)gsub:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *))block {
+- (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *))block {
+	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr options:0 error:nil];
+	return [self gsubRegex:regex withBlock:block];
+}
+
+- (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *))block {
 	NSArray *matches = [regex matchesInString:self options:0 range:NSMakeRange(0, self.length)];
 	
 	NSString *result = [self copy];

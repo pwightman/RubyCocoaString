@@ -14,7 +14,7 @@
 - (void) testGsubWithStringWithMatchingStrings {
 	NSString *initialStr = @"Foo foo";
 	
-	NSString *result = [initialStr gsub:RC_REGEX(@"(Foo|foo)") withString:@"bar"];
+	NSString *result = [initialStr gsub:@"(Foo|foo)" withString:@"bar"];
 	
 	STAssertTrue([result isEqualToString:@"bar bar"], @"gsub:withString: should replace \"Foo foo\" with \"bar bar\"");
 }
@@ -24,7 +24,7 @@
 	
 	__block NSInteger value = 0;
 	
-	NSString *result = [initialStr gsub:RC_REGEX(@"(Foo|foo)") withBlock:^NSString *(NSString *str) {
+	NSString *result = [initialStr gsub:@"(Foo|foo)" withBlock:^NSString *(NSString *str) {
 		return [@(value++) stringValue];
 	}];
 	
@@ -34,7 +34,7 @@
 - (void) testGsubWithBlockWithLongReplacementStrings {
 	NSString *initialStr = @"Foo bar";
 	
-	NSString *result = [initialStr gsub:RC_REGEX(@"(Foo|bar)") withBlock:^NSString *(NSString *str) {
+	NSString *result = [initialStr gsub:@"(Foo|bar)" withBlock:^NSString *(NSString *str) {
 		return @"Some really, really long string";
 	}];
 	
@@ -45,7 +45,7 @@
 //- (void) testGsubWithBlockWithSimpleKleeneStarExpression {
 //	NSString *initialStr = @"hello";
 //	
-//	NSString *result = [initialStr gsub:RC_REGEX(@".*") withBlock:^NSString *(NSString *str) {
+//	NSString *result = [initialStr gsub:@".*" withBlock:^NSString *(NSString *str) {
 //		return @"world";
 //	}];
 //	

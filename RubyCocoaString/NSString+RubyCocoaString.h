@@ -19,9 +19,11 @@
 - (NSString *)downcase;
 - (void)eachChar:(void (^)(NSString *ch))block;
 - (BOOL)endsWith:(NSString *)endString;
-- (NSString *)gsub:(NSRegularExpression *)regex withString:(NSString *)replacementString;
+- (NSString *)gsub:(NSString *)regexStr withString:(NSString *)replacementString;
+- (NSString *)gsubRegex:(NSRegularExpression *)regex withString:(NSString *)replacementString;
 // NOTE: This does not currently meet all semantic use cases of the Ruby implementation.
-- (NSString *)gsub:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *str))block;
+- (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *str))block;
+- (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *str))block;
 // True if it is literally the empty string (@"")
 - (BOOL)isEmpty;
 // True if it is just whitespace characters (@"  \t\n")
@@ -36,6 +38,8 @@
 
 // Unimplemented. Do not attempt to implement without first writing test cases!
 // TODO: create a varg_list version
+- (NSString *)camelize;
 - (NSString *)delete:(NSString *)delString;
+- (NSString *)underscore;
 
 @end

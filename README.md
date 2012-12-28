@@ -35,19 +35,23 @@ A few methods are also borrowed from `ActiveSupport`, such as [`blank?` and `pre
 
 The following Ruby string methods are currently implemented:
 
-* [`blank?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
+#### String Methods
 * [`capitalize`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-capitalize)
 * [`concat`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-concat)
 * [`downcase`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-downcase)
 * [`end_with?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-end_with-3F)
 * [`empty?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-empty-3F)
 * [`gsub`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-gsub)
-* [`present?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
 * [`reverse`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-reverse)
 * [`split`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-split)
 * [`start_with?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-start_with-3F)
 * [`strip`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-strip)
 * [`upcase`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-upcase)
+
+#### ActiveSupport Methods
+* [`blank?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
+* [`camelize`](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-camelize)
+* [`present?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
 
 ## Contributing
 
