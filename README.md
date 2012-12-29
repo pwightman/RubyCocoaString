@@ -37,6 +37,7 @@ The following Ruby string methods are currently implemented:
 
 #### String Methods
 * [`capitalize`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-capitalize)
+* [`center`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-center)
 * [`concat`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-concat)
 * [`downcase`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-downcase)
 * [`end_with?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-end_with-3F)

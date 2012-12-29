@@ -24,6 +24,35 @@
 	return [self capitalizedString];
 }
 
+- (NSString *)center:(NSInteger)width {
+	return [self center:width padString:@" "];
+}
+
+- (NSString *)center:(NSInteger)width padString:(NSString *)padString {
+	if ([padString isEmpty]) return [self copy];
+	if (width <= self.length) return [self copy];
+	
+	NSInteger leftWidth = (width - self.length) / 2;
+	NSInteger rightWidth = leftWidth;
+	
+	// There's a potential off-by-one error for odd-width with even-length string.
+	if (leftWidth + rightWidth + self.length < width) ++rightWidth;
+	
+	NSMutableString *str = [NSMutableString stringWithCapacity:width];
+	
+	for (NSInteger i = 0; i < leftWidth; i++) {
+		[str appendString:[padString substringWithRange:NSMakeRange(i % padString.length, 1)]];
+	}
+	
+	[str appendString:self];
+	
+	for (NSInteger i = 0; i < rightWidth; i++) {
+		[str appendString:[padString substringWithRange:NSMakeRange(i % padString.length, 1)]];
+	}
+	
+	return str;
+}
+
 - (NSString *)concat:(NSString *)aString {
 	return [self stringByAppendingString:aString];
 }

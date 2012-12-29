@@ -42,6 +42,7 @@
 		5FD575BA168D198000659B95 /* RCCamelizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575B9168D198000659B95 /* RCCamelizeTests.m */; };
 		5FD575BE168D199900659B95 /* RCUnderscoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575BD168D199900659B95 /* RCUnderscoreTests.m */; };
 		5FD575C8168E7F5400659B95 /* RCLowerCamelizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575C7168E7F5400659B95 /* RCLowerCamelizeTests.m */; };
+		5FD575CB168E97E900659B95 /* RCCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575CA168E97E800659B95 /* RCCenterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		5FD575BD168D199900659B95 /* RCUnderscoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUnderscoreTests.m; sourceTree = "<group>"; };
 		5FD575C6168E7F5300659B95 /* RCLowerCamelizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLowerCamelizeTests.h; sourceTree = "<group>"; };
 		5FD575C7168E7F5400659B95 /* RCLowerCamelizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLowerCamelizeTests.m; sourceTree = "<group>"; };
+		5FD575C9168E97E800659B95 /* RCCenterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCenterTests.h; sourceTree = "<group>"; };
+		5FD575CA168E97E800659B95 /* RCCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCenterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,8 @@
 				5FD575B9168D198000659B95 /* RCCamelizeTests.m */,
 				5F9D21531688E5050013422C /* RCCapitalizeTests.h */,
 				5F9D21541688E5050013422C /* RCCapitalizeTests.m */,
+				5FD575C9168E97E800659B95 /* RCCenterTests.h */,
+				5FD575CA168E97E800659B95 /* RCCenterTests.m */,
 				5F9D214D1688DFA70013422C /* RCConcatTests.h */,
 				5F9D214E1688DFA70013422C /* RCConcatTests.m */,
 				5F9D213B1688DF220013422C /* RCDowncaseTests.h */,
@@ -390,6 +395,7 @@
 				5FD575BA168D198000659B95 /* RCCamelizeTests.m in Sources */,
 				5FD575BE168D199900659B95 /* RCUnderscoreTests.m in Sources */,
 				5FD575C8168E7F5400659B95 /* RCLowerCamelizeTests.m in Sources */,
+				5FD575CB168E97E900659B95 /* RCCenterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,5 +40,7 @@
 
 // TODO: create a varg_list version, perhaps?
 - (NSString *)delete:(NSString *)delString;
+- (NSString *)center:(NSInteger)width;
+- (NSString *)center:(NSInteger)width padString:(NSString *)padString;
 
 @end
