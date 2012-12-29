@@ -54,6 +54,43 @@ The following Ruby string methods are currently implemented:
 * [`present?`](http://guides.rubyonrails.org/active_support_core_extensions.html#blank-and-present)
 * [`underscore`](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-underscore)
 
+#### Custom Methods
+* `lowerCamelize` - Same as `camelize`, except first letter is lowercased. Helpful when, for example, an API returns `foo_bar` and you want to assign it to a Obj-C object's `fooBar` property.
+
+## Examples
+
+```
+[@"   foo bar   " strip];
+// => @"foo bar"
+
+["foo_bar" camelize];
+// => @"FooBar"
+
+["foo_bar" lowerCamelize];
+// => "fooBar"
+
+[@"FooBar" underscore];
+// => "foo_bar"
+
+["  \t\n" isBlank];
+// => YES
+
+[@"foo bar" endsWith:@"bar"];
+// => YES
+
+[@"this is just madness" gsub:@"just" withString:@"pure"];
+// => @"this is pure madness"
+
+[@"this is JUST PLAIN madness" gsub:@"[A-Z]+" 
+                          withBlock:^(NSString *str, NSRange range) {
+    return ([str isEqualToString:@"JUST"] ? @"pure" : @"awesome");
+}];
+// => @"this is pure awesome madness"
+
+[@"telescope" reverse];
+// => @"epocselet"
+```
+
 ## Contributing
 
 **Always** write test cases before implementing methods. It's extremely easy, please ask if you've never written tests in Xcode before.
@@ -65,6 +102,11 @@ The following Ruby string methods are currently implemented:
 5. Commit your changes (`git commit -am 'Added some feature'`)
 7. Push to the branch (`git push origin my-new-feature`)
 8. Create new Pull Request
+
+A few other notes:
+
+* Please try to keep things alphabetized as best as possible, both file orderings of test cases within Xcode's file navigator, and within the header/implementation files of `NSString+RubyCocoaString.{h,m}`.
+* This is an ideal library for coders new to the open source community to get involved, please do not hesitate to contribute or ask questions via issues, especially if you are new to testing in Xcode. I'm a nice guy :-)
 
 ## Contributors
 
