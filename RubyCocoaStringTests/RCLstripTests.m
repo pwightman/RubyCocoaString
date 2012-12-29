@@ -16,7 +16,7 @@
 }
 
 - (void) testLstripWithMulilineString {
-	STAssertTrue([[@"    foo  \n\n   foo  " lstrip] isEqualToString:@"foo  \n\n   foo  "], @"lstrip: only remove whitespace from beginning of string, not beginning of every line.");
+	STAssertTrue([[@"\n\n\r\n    foo  \n\n   foo  " lstrip] isEqualToString:@"foo  \n\n   foo  "], @"lstrip: only remove whitespace from beginning of string, not beginning of every line.");
 }
 
 @end

@@ -16,7 +16,7 @@
 }
 
 - (void) testLstripWithMulilineString {
-	STAssertTrue([[@"    foo  \n\n   foo  " rstrip] isEqualToString:@"    foo  \n\n   foo"], @"rstrip: only remove whitespace from end of string, not end of every line.");
+	STAssertTrue([[@"    foo  \n\n   foo  \r\n\n" rstrip] isEqualToString:@"    foo  \n\n   foo"], @"rstrip: only remove whitespace from end of string, not end of every line.");
 }
 
 
