@@ -55,7 +55,7 @@ The following Ruby string methods are currently implemented:
 * [`underscore`](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-underscore)
 
 #### Custom Methods
-* `lowerCamelize` - Same as `camelize`, except first letter is lowercased. Helpful when, for example, an API returns `foo_bar` and you want to assign it to a Obj-C object's `fooBar` property.
+* `lowerCamelize` - Same as `camelize`, except first letter is lowercased. Helpful when, for example, an API returns `foo_bar` and you want to assign it to an Obj-C object's `fooBar` property.
 
 ## Examples
 
@@ -87,6 +87,13 @@ The following Ruby string methods are currently implemented:
 }];
 // => @"this is pure awesome madness"
 
+[@"foo" eachChar:^(NSString *ch) {
+    NSLog(@"%@", ch);
+}];
+// => @"f"
+// => @"o"
+// => @"o"
+
 [@"telescope" reverse];
 // => @"epocselet"
 ```
@@ -98,16 +105,16 @@ The following Ruby string methods are currently implemented:
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Write your tests, implement methods
-4. Change README and other applicable documentation reflecting your changes.
+4. Change README and other applicable documentation reflecting your changes
 5. Commit your changes (`git commit -am 'Added some feature'`)
 7. Push to the branch (`git push origin my-new-feature`)
 8. Create new Pull Request
 
 A few other notes:
 
-* Please try to keep things alphabetized as best as possible, both file orderings of test cases within Xcode's file navigator, and within the header/implementation files of `NSString+RubyCocoaString.{h,m}`.
+* Please try to keep things alphabetized as best as possible, both file orderings of test cases within Xcode's file navigator, and methods within the header/implementation files of `NSString+RubyCocoaString.{h,m}`.
 * This is an ideal library for coders new to the open source community to get involved, please do not hesitate to contribute or ask questions via issues, especially if you are new to testing in Xcode. I'm a nice guy :-)
 
 ## Contributors
 
-[Parker Wightman](https://github.com/pwightman) ([@parkerwightman](http://twitter.com/parkerwightman))  
+[Parker Wightman](https://github.com/pwightman) ([@parkerwightman](http://twitter.com/parkerwightman))
