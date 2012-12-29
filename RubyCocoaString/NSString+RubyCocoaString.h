@@ -15,6 +15,8 @@
 @interface NSString (RubyCocoaString)
 
 - (NSString *)camelize;
+- (NSString *)center:(NSInteger)width;
+- (NSString *)center:(NSInteger)width padString:(NSString *)padString;
 - (NSString *)capitalize;
 - (NSString *)concat:(NSString *)aString;
 - (NSString *)downcase;
@@ -40,7 +42,5 @@
 
 // TODO: create a varg_list version, perhaps?
 - (NSString *)delete:(NSString *)delString;
-- (NSString *)center:(NSInteger)width;
-- (NSString *)center:(NSInteger)width padString:(NSString *)padString;
 
 @end
