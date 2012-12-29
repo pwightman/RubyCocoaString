@@ -43,6 +43,8 @@
 		5FD575BE168D199900659B95 /* RCUnderscoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575BD168D199900659B95 /* RCUnderscoreTests.m */; };
 		5FD575C8168E7F5400659B95 /* RCLowerCamelizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575C7168E7F5400659B95 /* RCLowerCamelizeTests.m */; };
 		5FD575CB168E97E900659B95 /* RCCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575CA168E97E800659B95 /* RCCenterTests.m */; };
+		5FD575CE168EBDA900659B95 /* RCRstripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575CD168EBDA900659B95 /* RCRstripTests.m */; };
+		5FD575D1168EBDDA00659B95 /* RCLstripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575D0168EBDDA00659B95 /* RCLstripTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,10 @@
 		5FD575C7168E7F5400659B95 /* RCLowerCamelizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLowerCamelizeTests.m; sourceTree = "<group>"; };
 		5FD575C9168E97E800659B95 /* RCCenterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCenterTests.h; sourceTree = "<group>"; };
 		5FD575CA168E97E800659B95 /* RCCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCenterTests.m; sourceTree = "<group>"; };
+		5FD575CC168EBDA900659B95 /* RCRstripTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRstripTests.h; sourceTree = "<group>"; };
+		5FD575CD168EBDA900659B95 /* RCRstripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRstripTests.m; sourceTree = "<group>"; };
+		5FD575CF168EBDD900659B95 /* RCLstripTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLstripTests.h; sourceTree = "<group>"; };
+		5FD575D0168EBDDA00659B95 /* RCLstripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLstripTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,8 +234,12 @@
 				5F9D21361688B71E0013422C /* RCIsPresentTests.m */,
 				5FD575C6168E7F5300659B95 /* RCLowerCamelizeTests.h */,
 				5FD575C7168E7F5400659B95 /* RCLowerCamelizeTests.m */,
+				5FD575CF168EBDD900659B95 /* RCLstripTests.h */,
+				5FD575D0168EBDDA00659B95 /* RCLstripTests.m */,
 				5F9D21561689257B0013422C /* RCReverseTests.h */,
 				5F9D21571689257B0013422C /* RCReverseTests.m */,
+				5FD575CC168EBDA900659B95 /* RCRstripTests.h */,
+				5FD575CD168EBDA900659B95 /* RCRstripTests.m */,
 				5F9D2113168765DB0013422C /* RCSplitTests.h */,
 				5F9D2114168765DB0013422C /* RCSplitTests.m */,
 				5F9D214A1688DF880013422C /* RCStartsWithTests.h */,
@@ -396,6 +406,8 @@
 				5FD575BE168D199900659B95 /* RCUnderscoreTests.m in Sources */,
 				5FD575C8168E7F5400659B95 /* RCLowerCamelizeTests.m in Sources */,
 				5FD575CB168E97E900659B95 /* RCCenterTests.m in Sources */,
+				5FD575CE168EBDA900659B95 /* RCRstripTests.m in Sources */,
+				5FD575D1168EBDDA00659B95 /* RCLstripTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

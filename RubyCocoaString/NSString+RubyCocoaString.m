@@ -130,7 +130,11 @@
 											  withString:[[camelized substringToIndex:1] downcase]];
 }
 
-- (NSString *) reverse {
+- (NSString *)lstrip {
+	return [self gsub:@"^\\s*" withString:@""];
+}
+
+- (NSString *)reverse {
 	NSMutableString *newString = [NSMutableString string];
 	
 	for (NSInteger i = self.length; i > 0; i--) {
@@ -138,6 +142,10 @@
 	}
 	
 	return newString;
+}
+
+- (NSString *)rstrip {
+	return [self gsub:@"\\s*$" withString:@""];
 }
 
 - (NSArray *)split:(NSString *)splitString {

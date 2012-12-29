@@ -31,7 +31,9 @@
 - (BOOL)isBlank; // True if it is just whitespace characters (@"  \t\n")
 - (BOOL)isPresent; // Opposite of isBlank
 - (NSString *)lowerCamelize;
+- (NSString *)lstrip;
 - (NSString *)reverse;
+- (NSString *)rstrip;
 - (NSArray *)split:(NSString *)splitString;
 - (BOOL)startsWith:(NSString *)startString;
 - (NSString *)strip;
