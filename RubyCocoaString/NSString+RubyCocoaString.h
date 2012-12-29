@@ -25,12 +25,10 @@
 // NOTE: This does not currently meet all semantic use cases of the Ruby implementation.
 - (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *str, NSRange range))block;
 - (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *str, NSRange range))block;
-// True if it is literally the empty string (@"")
-- (BOOL)isEmpty;
-// True if it is just whitespace characters (@"  \t\n")
-- (BOOL)isBlank;
-// Opposite of isBlank
-- (BOOL)isPresent;
+- (BOOL)isEmpty; // True if it is literally the empty string (@"")
+- (BOOL)isBlank; // True if it is just whitespace characters (@"  \t\n")
+- (BOOL)isPresent; // Opposite of isBlank
+- (NSString *)lowerCamelize;
 - (NSString *)reverse;
 - (NSArray *)split:(NSString *)splitString;
 - (BOOL)startsWith:(NSString *)startString;
@@ -38,8 +36,9 @@
 - (NSString *)underscore;
 - (NSString *)upcase;
 
-// Unimplemented. Do not attempt to implement without first writing test cases!
-// TODO: create a varg_list version
+// Unimplemented Methods (Do not attempt to implement without first writing test cases!)
+
+// TODO: create a varg_list version, perhaps?
 - (NSString *)delete:(NSString *)delString;
 
 @end

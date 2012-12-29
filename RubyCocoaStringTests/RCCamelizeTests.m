@@ -31,4 +31,8 @@
 	STAssertTrue([[@"" camelize] isEqualToString:@""], @"camelize: empty string doesn't throw error");
 }
 
+- (void) testCamelizeOnJustUnderscore {
+	STAssertTrue([[@"_" camelize] isEqualToString:@""], @"camelize: _ becomes \"\"");
+}
+
 @end

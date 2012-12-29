@@ -93,11 +93,19 @@
 	return ![self isBlank];
 }
 
-- (NSString *) reverse {
-	NSString *newString = @"";
+- (NSString *)lowerCamelize {
+	NSString *camelized = [self camelize];
+	if (camelized.length == 0) return @"";
 	
-	for (NSInteger i = 0; i < self.length; i++) {
-		newString = [newString stringByAppendingString:[self substringWithRange:NSMakeRange(self.length - i - 1, 1)]];
+	return [camelized stringByReplacingCharactersInRange:NSMakeRange(0, 1)
+											  withString:[[camelized substringToIndex:1] downcase]];
+}
+
+- (NSString *) reverse {
+	NSMutableString *newString = [NSMutableString string];
+	
+	for (NSInteger i = self.length; i > 0; i--) {
+		[newString appendString:[self substringWithRange:NSMakeRange(i - 1, 1)]];
 	}
 	
 	return newString;
