@@ -105,7 +105,7 @@ The following Ruby string methods are currently implemented:
 
 #### Known implementation difficulties:
 
-* `gsub` has some advanced semantic use cases which are difficult to satisfy, though most common use cases are semantically equivalent to its Ruby counterpart. It is used internally to implement many other RubyCocoaString methods. Part of the difficulty lies in semantic and syntactic differences in regular expressions between Ruby and Objective-C, and what is considered a 'match'.
+* `gsub` has some advanced semantic use cases which are difficult to satisfy, though most common use cases are semantically equivalent to its Ruby counterpart. It is used internally to implement many other RubyCocoaString methods. Part of the difficulty lies in semantic and syntactic differences in regular expressions between Ruby and Objective-C, and what is considered a 'match.'
 
 ## Contributing
 
