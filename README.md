@@ -101,6 +101,12 @@ The following Ruby string methods are currently implemented:
 // => @"epocselet"
 ```
 
+## Caveats
+
+#### Known implementation difficulties:
+
+* `gsub` has some advanced semantic use cases which are difficult to satisfy, though most common use cases are semantically equivalent to its Ruby counterpart. It is used internally to implement many other RubyCocoaString methods. Part of the difficulty lies in semantic and syntactic differences in regular expressions between Ruby and Objective-C, and what is considered a 'match'.
+
 ## Contributing
 
 **Always** write test cases before implementing methods. It's extremely easy, please ask if you've never written tests in Xcode before.

@@ -69,25 +69,35 @@
 
 - (BOOL) endsWith:(NSString *)endString {
 	if (self.length < endString.length) return NO;
-	return [[self substringWithRange:NSMakeRange(self.length - endString.length, endString.length)] isEqualToString:endString];
+	return [[self substringWithRange:NSMakeRange(self.length - endString.length,
+												 endString.length)] isEqualToString:endString];
 }
 
 - (NSString *)gsub:(NSString *)regexStr withString:(NSString *)replacementString {
-	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr options:0 error:nil];
+	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr
+																		   options:0
+																			 error:nil];
 	return [self gsubRegex:regex withString:replacementString];
 }
 
 - (NSString *)gsubRegex:(NSRegularExpression *)regex withString:(NSString *)replacementString {
-	return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:replacementString];
+	return [regex stringByReplacingMatchesInString:self
+										   options:0
+											 range:NSMakeRange(0, self.length)
+									  withTemplate:replacementString];
 }
 
 - (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *, NSRange))block {
-	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr options:0 error:nil];
+	NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexStr
+																		   options:0
+																			 error:nil];
 	return [self gsubRegex:regex withBlock:block];
 }
 
 - (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *, NSRange))block {
-	NSArray *matches = [regex matchesInString:self options:0 range:NSMakeRange(0, self.length)];
+	NSArray *matches = [regex matchesInString:self
+									  options:0
+										range:NSMakeRange(0, self.length)];
 	
 	NSString *result = [self copy];
 	
@@ -115,7 +125,7 @@
 }
 
 - (BOOL)isBlank {
-	return [[[self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsJoinedByString:@""] isEmpty];
+	return [self strip].length == 0;
 }
 
 - (BOOL)isPresent {
