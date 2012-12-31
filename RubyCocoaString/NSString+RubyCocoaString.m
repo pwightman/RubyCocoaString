@@ -144,6 +144,10 @@
 	return [self gsub:@"^\\s*" withString:@""];
 }
 
+- (NSInteger) ord {
+	return (NSInteger)[self characterAtIndex:0];
+}
+
 - (NSString *)reverse {
 	NSMutableString *newString = [NSMutableString string];
 	

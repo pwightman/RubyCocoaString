@@ -32,6 +32,7 @@
 - (BOOL)isPresent; // Opposite of isBlank
 - (NSString *)lowerCamelize;
 - (NSString *)lstrip;
+- (NSInteger) ord;
 - (NSString *)reverse;
 - (NSString *)rstrip;
 - (NSArray *)split:(NSString *)splitString;

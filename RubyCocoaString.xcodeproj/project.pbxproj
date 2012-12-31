@@ -45,6 +45,7 @@
 		5FD575CB168E97E900659B95 /* RCCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575CA168E97E800659B95 /* RCCenterTests.m */; };
 		5FD575CE168EBDA900659B95 /* RCRstripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575CD168EBDA900659B95 /* RCRstripTests.m */; };
 		5FD575D1168EBDDA00659B95 /* RCLstripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD575D0168EBDDA00659B95 /* RCLstripTests.m */; };
+		5FD576331691199B00659B95 /* RCOrdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD576321691199B00659B95 /* RCOrdTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		5FD575CD168EBDA900659B95 /* RCRstripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRstripTests.m; sourceTree = "<group>"; };
 		5FD575CF168EBDD900659B95 /* RCLstripTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLstripTests.h; sourceTree = "<group>"; };
 		5FD575D0168EBDDA00659B95 /* RCLstripTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLstripTests.m; sourceTree = "<group>"; };
+		5FD576311691199B00659B95 /* RCOrdTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCOrdTests.h; sourceTree = "<group>"; };
+		5FD576321691199B00659B95 /* RCOrdTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCOrdTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,8 @@
 				5FD575C7168E7F5400659B95 /* RCLowerCamelizeTests.m */,
 				5FD575CF168EBDD900659B95 /* RCLstripTests.h */,
 				5FD575D0168EBDDA00659B95 /* RCLstripTests.m */,
+				5FD576311691199B00659B95 /* RCOrdTests.h */,
+				5FD576321691199B00659B95 /* RCOrdTests.m */,
 				5F9D21561689257B0013422C /* RCReverseTests.h */,
 				5F9D21571689257B0013422C /* RCReverseTests.m */,
 				5FD575CC168EBDA900659B95 /* RCRstripTests.h */,
@@ -408,6 +413,7 @@
 				5FD575CB168E97E900659B95 /* RCCenterTests.m in Sources */,
 				5FD575CE168EBDA900659B95 /* RCRstripTests.m in Sources */,
 				5FD575D1168EBDDA00659B95 /* RCLstripTests.m in Sources */,
+				5FD576331691199B00659B95 /* RCOrdTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
