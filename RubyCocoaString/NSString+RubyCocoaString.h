@@ -33,6 +33,7 @@
 - (NSString *)lowerCamelize;
 - (NSString *)lstrip;
 - (NSInteger) ord;
+- (NSString *)prepend:(NSString *)aString;
 - (NSString *)reverse;
 - (NSString *)rstrip;
 - (NSArray *)split:(NSString *)splitString;

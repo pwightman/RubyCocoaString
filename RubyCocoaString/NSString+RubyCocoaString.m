@@ -148,6 +148,10 @@
 	return (NSInteger)[self characterAtIndex:0];
 }
 
+- (NSString *)prepend:(NSString *)aString {
+	return [aString stringByAppendingString:self];
+}
+
 - (NSString *)reverse {
 	NSMutableString *newString = [NSMutableString string];
 	

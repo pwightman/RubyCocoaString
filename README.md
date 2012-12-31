@@ -45,6 +45,7 @@ The following Ruby string methods are currently implemented:
 * [`gsub`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-gsub)
 * [`lstrip`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-lstrip)
 * [`ord`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-ord)
+* [`prepend`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-prepend)
 * [`reverse`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-reverse)
 * [`rstrip`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-rstrip)
 * [`split`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-split)
