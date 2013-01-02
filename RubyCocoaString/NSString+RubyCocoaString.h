@@ -45,6 +45,6 @@
 // Unimplemented Methods (Do not attempt to implement without first writing test cases!)
 
 // TODO: create a varg_list version, perhaps?
-- (NSString *)delete:(NSString *)delString;
+// - (NSString *)delete:(NSString *)delString;
 
 @end
