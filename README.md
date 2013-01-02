@@ -5,8 +5,10 @@ Ruby string manipulation methods for NSString, implemented as a category.
 
 ## Installation
 
-1. [CocoaPods](http://cocoapods.org) by adding `pod 'RubyCocoaString'` to your `Podfile`.
-2. Copy `NSString+RubyCocoaString.{h,m}` into your project.
+#### One of two options:
+
+1. [CocoaPods](http://cocoapods.org) by adding `pod 'RubyCocoaString'` to your `Podfile`, run `pod install`, and import the headers with `#import <RubyCocoaString/NSString+RubyCocoaString.h>`.
+2. Copy `NSString+RubyCocoaString.{h,m}` into your project, import it with `#import "NSString+RubyCocoaString.h"` as necessary.
 
 ## Discussion
 
