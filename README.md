@@ -62,6 +62,8 @@ The following Ruby string methods are currently implemented:
 #### Custom Methods
 * `lowerCamelize` - Same as `camelize`, except first letter is lowercased. Helpful when, for example, an API returns `foo_bar` and you want to assign it to an Obj-C object's `fooBar` property.
 
+(Tasteful variations on Ruby string methods, specifically helpful on iOS/Mac, are allowed as Custom Methods, but this is not meant to be a library with every possible string method under the sun. Pull requests welcome!)
+
 ## Examples
 
 ```
@@ -95,9 +97,9 @@ The following Ruby string methods are currently implemented:
 [@"foo" eachChar:^(NSString *ch) {
     NSLog(@"%@", ch);
 }];
-// => @"f"
-// => @"o"
-// => @"o"
+// => f
+// => o
+// => o
 
 [@"telescope" reverse];
 // => @"epocselet"
