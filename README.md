@@ -5,15 +5,18 @@ Ruby string manipulation methods for NSString, implemented as a category.
 
 ## Installation
 
-1. [CocoaPods](http://cocoapods.org) by adding `pod 'RubyCocoaString'` to your `Podfile`.
-2. Copy `NSString+RubyCocoaString.{h,m}` into your project.
+#### One of two options:
+
+1. [CocoaPods](http://cocoapods.org) by adding `pod 'RubyCocoaString'` to your `Podfile`, run `pod install`, and import the headers with `#import <RubyCocoaString/NSString+RubyCocoaString.h>`.
+2. Copy `NSString+RubyCocoaString.{h,m}` into your project, import it with `#import "NSString+RubyCocoaString.h"` as necessary.
 
 ## Discussion
 
-`NSString` manipulation is very verbose and lacking in features when 
+`NSString` manipulation, while more fully-featured than you might imagine, is very verbose and burdensome when 
 compared to modern scripting languages such as Ruby and Python. 
 RubyCocoaString brings the [string manipulation methods from Ruby](http://www.ruby-doc.org/core-1.9.3/String.html) 
-to NSString as a category. All semantics of the Ruby implementation of these methdods are preserved wherever possible, contributions and issues welcome when inconsistencies are found.
+to NSString as a category. All semantics of the Ruby implementation of these methdods are preserved wherever possible, 
+contributions and issues welcome when inconsistencies are found.
 
 Small Cocoa-isms are applied as necessary, however. For example, the Ruby code:
 
