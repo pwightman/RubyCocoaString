@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #define RC_REGEX(regex) [NSRegularExpression regularExpressionWithPattern:(regex) \
-							options:0 \
-							error:nil]
+                                                                  options:0       \
+                                                                    error:nil]
 
 @interface NSString (RubyCocoaString)
 
