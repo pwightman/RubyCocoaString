@@ -144,7 +144,11 @@
     return result;
 }
 
+- (BOOL) includes: (NSString  *) aString {
+    NSRange rng = [self rangeOfString:aString];
+    return rng.location != NSNotFound;
 
+}
 
 
 - (BOOL)isEmpty {

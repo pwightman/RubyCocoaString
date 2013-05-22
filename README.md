@@ -46,6 +46,7 @@ The following Ruby string methods are currently implemented:
 * [`end_with?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-end_with-3F)
 * [`empty?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-empty-3F)
 * [`gsub`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-gsub)
+* [`include?`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-include-3F)
 * [`lstrip`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-lstrip)
 * [`ord`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-ord)
 * [`prepend`](http://www.ruby-doc.org/core-1.9.3/String.html#method-i-prepend)
