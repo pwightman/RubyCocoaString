@@ -27,6 +27,7 @@
 // NOTE: This does not currently meet all semantic use cases of the Ruby implementation.
 - (NSString *)gsub:(NSString *)regexStr withBlock:(NSString *(^)(NSString *str, NSRange range))block;
 - (NSString *)gsubRegex:(NSRegularExpression *)regex withBlock:(NSString *(^)(NSString *str, NSRange range))block;
+- (BOOL) includes: (NSString  *) aString;
 - (BOOL)isEmpty; // True if it is literally the empty string (@"")
 - (BOOL)isBlank; // True if it is just whitespace characters (@"  \t\n")
 - (BOOL)isPresent; // Opposite of isBlank
