@@ -20,14 +20,14 @@ contributions and issues welcome when inconsistencies are found.
 
 Small Cocoa-isms are applied as necessary, however. For example, the Ruby code:
 
-```
+```ruby
 "".empty?
 "foo".end_with? "o"
 ```
 
 would be written as the following in Objective-C:
 
-```
+```objc
 [@"" isEmpty];
 [@"foo" endsWith:@"o"];
 ```
@@ -70,7 +70,7 @@ The following Ruby string methods are currently implemented:
 
 ## Examples
 
-```
+```objc
 [@"   foo bar   " strip];
 // => @"foo bar"
 
